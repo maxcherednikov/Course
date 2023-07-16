@@ -1,0 +1,286 @@
+{
+	"id": "3b34e589-103a-48eb-b8c7-48803ba56d90",
+	"name": "Курсовая Copy",
+	"timestamp": "2023-05-25T18:14:08.830Z",
+	"collection_id": "26697064-86d1f7c6-96b9-4e6b-bfff-13a9771dd80f",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "error",
+	"startedAt": "2023-05-25T18:14:06.398Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "abc19471-a60f-407f-9624-57b95d769276",
+			"name": "Ввод с Английским языком",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				120
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a2b8f4e1-cb7f-4a1d-8a1c-fc56253ce762",
+			"name": "Ввод с Русским языком",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				119
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dedf91c9-6625-491c-8a6d-0027e4ac0558",
+			"name": "Ввод текста с верхнем регистром",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 130,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				130
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "55167aa9-d97d-4f6c-b639-899b7f92f95a",
+			"name": "Ввод текста с нижним регистром",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 108,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				108
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cfa7c807-1e6e-4451-8a6c-2086355a310b",
+			"name": "Пустота в описании",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 110,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				110
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1eb61d51-e0bf-427c-a83d-05aa4399ffb9",
+			"name": "Символы других алфавитов",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				119
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "431341e3-e9e3-4cda-a7b1-52fb35137be6",
+			"name": "Только пробелы (Ошибка)",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 40,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				40
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "72d86e43-7641-48a6-ae8b-117707e9ba88",
+			"name": "Более 40 символов",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				35
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "59c000da-35cb-4c77-ae6a-856d121634be",
+			"name": "Спецсимволы",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 128,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				128
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "165919a2-e38e-42cc-8ebc-7890591cc84b",
+			"name": "Иероглифы",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 114,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				114
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9df09443-3da7-413b-bef2-2a006e756f56",
+			"name": "Создание события",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				119
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dfc6da05-78a1-4ba5-8521-daa2ee7e7767",
+			"name": "Редактирование события",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/updatePersonal",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				64
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1206,
+	"collection": {
+		"requests": [
+			{
+				"id": "abc19471-a60f-407f-9624-57b95d769276",
+				"method": "POST"
+			},
+			{
+				"id": "a2b8f4e1-cb7f-4a1d-8a1c-fc56253ce762",
+				"method": "POST"
+			},
+			{
+				"id": "dedf91c9-6625-491c-8a6d-0027e4ac0558",
+				"method": "POST"
+			},
+			{
+				"id": "55167aa9-d97d-4f6c-b639-899b7f92f95a",
+				"method": "POST"
+			},
+			{
+				"id": "cfa7c807-1e6e-4451-8a6c-2086355a310b",
+				"method": "POST"
+			},
+			{
+				"id": "1eb61d51-e0bf-427c-a83d-05aa4399ffb9",
+				"method": "POST"
+			},
+			{
+				"id": "431341e3-e9e3-4cda-a7b1-52fb35137be6",
+				"method": "POST"
+			},
+			{
+				"id": "72d86e43-7641-48a6-ae8b-117707e9ba88",
+				"method": "POST"
+			},
+			{
+				"id": "59c000da-35cb-4c77-ae6a-856d121634be",
+				"method": "POST"
+			},
+			{
+				"id": "165919a2-e38e-42cc-8ebc-7890591cc84b",
+				"method": "POST"
+			},
+			{
+				"id": "9df09443-3da7-413b-bef2-2a006e756f56",
+				"method": "POST"
+			},
+			{
+				"id": "dfc6da05-78a1-4ba5-8521-daa2ee7e7767",
+				"method": "POST"
+			}
+		]
+	}
+}

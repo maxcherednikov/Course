@@ -1,0 +1,563 @@
+{
+	"info": {
+		"_postman_id": "20398003-9ad1-4649-8da5-9835fec8dfd4",
+		"name": "Курсовая Copy 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3738669"
+	},
+	"item": [
+		{
+			"name": "Ввод с Английским языком",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"event\",\r\n  \"title\": \"event\",\r\n  \"startAt\": \"2023-05-26T16:00:00+03:00\",\r\n  \"endAt\": \"2023-05-26T16:30:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ввод с Русским языком",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"Ивент\",\r\n  \"title\": \"Ивент\",\r\n  \"startAt\": \"2023-05-24T16:00:00+03:00\",\r\n  \"endAt\": \"2023-05-24T16:30:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ввод текста с верхнем регистром",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"ИВЕНТ\",\r\n  \"title\": \"ИВЕНТ\",\r\n  \"startAt\": \"2023-05-27T16:00:00+03:00\",\r\n  \"endAt\": \"2023-05-27T16:30:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ввод текста с нижним регистром",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"парамам\",\r\n  \"title\": \"парамам\",\r\n  \"startAt\": \"2023-05-25T16:30:00+03:00\",\r\n  \"endAt\": \"2023-05-25T17:00:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Пустота в описании",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"\",\r\n  \"title\": \"Пустота\",\r\n  \"startAt\": \"2023-05-16T16:00:00+03:00\",\r\n  \"endAt\": \"2023-05-16T16:30:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Символы других алфавитов",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"א ב ג ד ה ו ז ח ט י כ (ך) ל מ\",\r\n  \"title\": \"א ב ג ד ה ו ז ח ט י כ (ך) ל מ\",\r\n  \"startAt\": \"2023-05-26T17:00:00+03:00\",\r\n  \"endAt\": \"2023-05-26T17:30:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Только пробелы (Ошибка)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Более 40 символов",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"eventeventeventeventeventeventeventeventevent\",\r\n  \"title\": \"eventeventeventeventeventeventeventeventevent\",\r\n  \"startAt\": \"2023-05-26T16:00:00+03:00\",\r\n  \"endAt\": \"2023-05-26T16:30:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Спецсимволы",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"Макс%$$\",\r\n  \"title\": \"Макс%$$\",\r\n  \"startAt\": \"2023-05-23T17:00:00+03:00\",\r\n  \"endAt\": \"2023-05-23T17:30:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Иероглифы",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"丹 谷 Ѫ 灯 影 伝 鶐\",\r\n  \"title\": \"丹 谷 Ѫ 灯 影 伝 鶐\",\r\n  \"startAt\": \"2023-05-26T17:30:00+03:00\",\r\n  \"endAt\": \"2023-05-26T18:00:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создание события",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"idEvent = pm.response.json().data.payload.id;\r",
+							"\r",
+							"\r",
+							"pm.collectionVariables.set(\"idEvent\", idEvent);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"Вебинар2\",\r\n  \"title\": \"Вебинар2\",\r\n  \"startAt\": \"2023-05-31T16:00:00+03:00\",\r\n  \"endAt\": \"2023-05-31T16:30:00+03:00\",\r\n  \"oldStartAt\": \"2023-05-31T16:00:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/createPersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование события",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"idEvent = pm.response.json().data.payload.id;\r",
+							"\r",
+							"\r",
+							"pm.collectionVariables.set(\"idEvent\", idEvent);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"backgroundColor\": \"#F4F5F6\",\r\n  \"color\": \"#81888D\",\r\n  \"description\": \"Вебинар2\",\r\n  \"title\": \"Вебинар2\",\r\n  \"startAt\": \"2023-05-31T16:00:00+03:00\",\r\n  \"endAt\": \"2023-05-31T16:30:00+03:00\",\r\n  \"id\": {{idEvent}},\r\n  \"oldStartAt\": \"2023-05-31T16:00:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/updatePersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление события",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_global}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": {{idEvent}},\r\n  \"startAt\": \"2023-05-31T16:00:00+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-teachers.skyeng.ru/v2/schedule/removePersonal",
+					"protocol": "https",
+					"host": [
+						"api-teachers",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"schedule",
+						"removePersonal"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token_global",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrMTkwOTkwOTMzMzMiLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJMZW5ub24iLCJlbWFpbCI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJ1aUxhbmd1YWdlIjoicnUiLCJsb2NhbGUiOiJydSIsInNlcnZpY2VMb2NhbGUiOm51bGwsInVhcyI6MzAsImp3dFR5cGUiOjEsImp0aSI6InM3ZWMyZ1RQWmRjZ01Hdm5tRDJxeU45UkdRRnNPa09IIiwiYnJhbmQiOm51bGwsImV4cCI6MTY4NTExMzc0NywiYXZhdGFyVXJsIjoiaHR0cHM6XC9cL2F1dGgtYXZhdGFycy1za3llbmcuaW1naXgubmV0XC8xMDMzODczNlwvZTllMDc0YTQtMmM3My00NzhhLWI3YzItMTc4ZGI0ZjUwODY3P2F1dG89Zm9ybWF0JTJDZW5oYW5jZSZmaXQ9Y3JvcCZoPTIwMCZpeGxpYj1waHAtMi4xLjEmcT03NSZzYXQ9OCZzaGFycD0xMCZ2aWI9OCZ3PTIwMCIsImJpcnRoZGF5IjoiMTk0MC0xMC0wOSIsImFJc1N0cm9uZyI6dHJ1ZSwiYVR5cGUiOiJVU0VSTkFNRV9QQVNTV09SRCIsImFUaW1lIjoxNjg1MDI3MzQ0LCJyb2xlcyI6WyJST0xFX1RFQUNIRVIiLCJST0xFX0NSTTJfVEVBQ0hFUl9BQ0NFU1MiLCJST0xFX1RUQ19VU0FHRSIsIlJPTEVfVklNQk9YX1RFQUNIRVJfVVNBR0UiLCJST0xFX01BVEhfVEVBQ0hFUiIsIlJPTEVfTUFUSF9DT05URU5UX1RIRU1FX1ZJRVciLCJST0xFX0VTU0FZX0lOU1BFQ1RPUl9URUFDSEVSIl19.2sQbD1-sMkTf60IEZSvZj5Uo3gfcRAfaTH59qzzq92KSEYcKCy0beSGLcf3QWoCGOHlgrsp0_cM1tg-_YoL-FfDn8coJ1b9dX7eZ6-raQVK43cBRVB0V249aGaeTg4SYoj07nubchZgxSP9-P3Acn9_kU18obTdGHvYdXNsJNfpqkWc8P9c78myef5Q8IlAH7pJ8WwutQcmOqGpEHD4w8Q3hvcrQaxrNgcv0OkpBhGywzzrXT7pSusutIs8v0Xn4VIZK4DkZls8HFA5clB9wofo9CFraWyleGKNx29mbpDDz-VaHuLXfTHoMnD4k3zH6AJqiL3E5e64LFXQ7CusRVTD-JSNGbS-HxKR1HaPvtk6byAFMawoNf4YicU0EOPh-4rooeRHdWS6PibxMMnWN0oHElgmSeu_ZfLTCHBsJ_S-UpMJ8FOkwejtSmxfBoZgOfvnUdRDY2EFHiGW9wGk54zLlSrW0XzvvJSHgZ625H5rxB4yaaX9RIxZMcH3jvDPi-VMXNz6nLtx2utdXYHd_ggNpxydvN_EJwDf_EoJzAaDY5TxB4IQ0BhYKNwOofWyRGc5YMwT1QpNdGk-8_hztyz0Ke1bMlwTDtnv_a-JVysmxaCyg-wMPq4xxmAJ25u5-daQYgSreDNyFY4w0-Z3LPOaPCq8oo_cZAuRINLdL_a8",
+			"type": "string"
+		},
+		{
+			"key": "idEvent",
+			"value": ""
+		}
+	]
+}
